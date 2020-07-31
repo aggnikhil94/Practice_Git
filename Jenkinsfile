@@ -5,7 +5,9 @@ pipeline {
         stage('Create build output') {
             steps {
                 echo 'Building..'
-                sh "mkdir  G:\Nikhil"
+                dir('G:\\Nikhil') {
+                  // some block
+                }
             }
         }
         stage('Test') {
