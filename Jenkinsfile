@@ -6,7 +6,6 @@ pipeline {
             steps {
                 echo 'Building..'
                 mkdir G:\Nikhil
-                writeFile file: 'groovy1.txt', text: 'Working with files the Groovy way is easy.'
             }
         }
         stage('Test') {
