@@ -5,6 +5,7 @@ pipeline {
         stage('Create build output') {
             steps {
                 echo 'Building..'
+                archiveArtifacts '.js'
                 dir('G:\\Nikhil') {
                   writeFile file:'dummy', text:''
                 }
