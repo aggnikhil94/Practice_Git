@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 dir('G:\\Nikhil') {
-                  // some block
+                  writeFile file:'dummy', text:''
                 }
             }
         }
