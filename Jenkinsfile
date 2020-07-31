@@ -5,7 +5,7 @@ pipeline {
         stage('Create build output') {
             steps {
                 echo 'Building..'
-                mkdir G:\Nikhil
+                sh label: '', script: 'mkdir  G:\\Nikhil'
             }
         }
         stage('Test') {
